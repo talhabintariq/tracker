@@ -70,3 +70,8 @@ body {
 .location-info li {
   padding: 5px 0;
 }
+
+.location-info > .close-icon {
+  float: right;
+  cursor: pointer;
+}
