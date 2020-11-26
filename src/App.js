@@ -7,7 +7,6 @@ function App() {
   const [eventData, setEventData] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  console.log(process.env.REACT_APP_BART_API_KEY)
   useEffect(() => {
     const fetchEvents = async () => {
       setLoading(true);
