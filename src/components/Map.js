@@ -5,6 +5,7 @@ import LocationInfoBox from "./LocationInfoBox";
 
 // define constants
 const NATURAL_EVENT_WILDFIRE = 8;
+const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
 const Map = ({ eventData, center, zoom }) => {
   const [locationInfo, setLocationInfo] = useState(null);
@@ -26,7 +27,7 @@ const Map = ({ eventData, center, zoom }) => {
   return (
     <div className="map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
+        bootstrapURLKeys={{ key: API_KEY }}
         defaultCenter={center}
         defaultZoom={zoom}
       >
